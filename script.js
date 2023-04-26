@@ -9,7 +9,7 @@ const eleRequest = document.querySelector('.request')
 
 btnPlay.addEventListener('click',function(){
     eleRequest.classList.add('hidden');
-    eleGrid.classList.add('hidden');
+    eleGrid.classList.add('active');
 
     const cell = parseInt(selectLevel.value)
 
@@ -20,7 +20,7 @@ function createGrid(cell,eleContainer){
    
 eleContainer.innerHTML = '';
 
-    for (let i = 1 ; i <= ; i++){
+    for (let i = 1 ; i <= cell; i++){
         const eleCell = document.createElement('div');
         eleCell.innerHTML = i;
         eleCell.classList.add('cell');
@@ -30,5 +30,5 @@ eleContainer.innerHTML = '';
             eleCell.classList.toggle('clicked');
         });
     }
-
+    console.log('hai cliccato la casella', cell)
 }
