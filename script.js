@@ -20,7 +20,7 @@ function createGrid(cell,eleContainer){
    
 eleContainer.innerHTML = '';
 
-    for (let i = 1 ; i <= ; i++){
+    ;for (let i = 1 ; i <= ; i++){
         const eleCell = document.createElement('div');
         eleCell.innerHTML = i;
         eleCell.classList.add('cell');
