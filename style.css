@@ -1,32 +1,50 @@
 .grid{
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
-    height: 480px;
+    width: 600px;
+    height: 600px;
     border:  1px solid black;
+    box-sizing: border-box;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cell{
+    background-color: purple;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: red;
+}
 
 
 .hidden{
     display: none;
 }
+
+.clicked{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
